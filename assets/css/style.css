@@ -1,0 +1,434 @@
+@charset "UTF-8";
+/* Reset */
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@600&display=swap");
+/* font-family: 'Source Sans Pro', sans-serif; */
+@font-face {
+  font-family: "Segoe UI", sans-serif;
+  src: url(../webfonts/segoe-ui/regular.woff),
+    url(../webfonts/segoe-ui/regular.woff2);
+  font-weight: 400;
+}
+@font-face {
+  font-family: "Segoe UI", sans-serif;
+  src: url(../webfonts/segoe-ui/semi-bold.woff),
+    url(../webfonts/segoe-ui/semi-bold.woff2);
+  font-weight: 600;
+}
+@font-face {
+  font-family: "Segoe UI", sans-serif;
+  src: url(../webfonts/segoe-ui/bold.woff), url(../webfonts/segoe-ui/bold.woff2);
+  font-weight: 700;
+}
+@font-face {
+  font-family: "Avenir", sans-serif;
+  src: url(../webfonts/avenir/avenir-regular.otf);
+  font-weight: 400;
+}
+@font-face {
+  font-family: "Avenir", sans-serif;
+  src: url(../webfonts/avenir/avenir-semibold.otf);
+  font-weight: 600;
+}
+@font-face {
+  font-family: "Avenir", sans-serif;
+  src: url(../webfonts/avenir/avenir-bold.otf);
+  font-weight: 700;
+}
+@font-face {
+  font-family: "Avenir", sans-serif;
+  src: url(../webfonts/avenir/avenir-extra-bold.otf);
+  font-weight: 800;
+}
+@font-face {
+  font-family: "Avenir", sans-serif;
+  src: url(../webfonts/avenir/avenir-black.otf);
+  font-weight: 900;
+}
+@font-face {
+  font-family: "Helvetica Nue", sans-serif;
+  src: url(../webfonts/helvetica/helvetica.ttf);
+  font-weight: 400;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-size: 20px;
+  line-height: 24px;
+  font-family: "Segoe UI", sans-serif;
+  font-weight: 400;
+  background-color: #192127;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+a {
+  text-decoration: none;
+  display: inline-block;
+  -webkit-transition-duration: 0.4s;
+  transition-duration: 0.4s;
+}
+
+img {
+  max-width: 100%;
+}
+
+input {
+  outline: 0;
+}
+.text-center {
+  text-align: center;
+}
+.text-white * {
+  color: #fff;
+}
+
+/* Common Styles */
+a.common-btn {
+  background-color: #0076BF;
+  color: #fff;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 18px;
+  padding: 11px 19px;
+  border: 2px solid transparent;
+  border-radius: 30px;
+}
+a.common-btn:hover {
+  border-color: #0076BF;
+  background-color: transparent;
+  background-color: rgba(0, 118, 191,.3);
+}
+
+/*
+  Header
+*/
+header {
+height: 65px;
+background-color: #111111;
+display: flex;
+align-items: center;
+}
+header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+header a.logo {}
+header nav ul {
+  display: flex;
+  align-items: center;
+}
+header nav ul li {}
+header nav ul li:last-child {
+  margin-left: 30px;
+}
+header nav ul li a {
+  font-size: 14px;
+}
+header nav ul li:last-child a {
+  border: 2px solid;
+  font-family: 'Source Sans Pro', sans-serif;
+  border-radius: 30px;
+  font-size: 16px;
+  padding: 5px 13px;
+}
+
+/* Welcome */
+.welcome-section {
+  min-height: 100vh;
+  display: flex;
+  align-items: flex-end;
+  padding-bottom: 100px;
+  background: url(../images/welcome-bg.jpg) no-repeat scroll center center / cover;
+  position: relative;
+  z-index: 1;
+}
+.welcome-section::after {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  content: " ";
+  background-color: rgba(0,0,0,.3);
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+.welcome-section .welcome-text {
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.welcome-section .welcome-text h3 {
+  font-family: "Avenir", sans-serif;
+  font-weight: 900;
+  font-size: 46px;
+  line-height: 54px;
+}
+.welcome-section .welcome-text p {
+  font-family: "Avenir", sans-serif;
+  font-weight: 400;
+  font-size: 25px;
+  padding-left: 40px;
+  margin-top: 25px;
+  margin-bottom: 20px;
+}
+
+/* Team */
+.team-section {
+  padding: 90px 0;
+}
+
+.team-section .team-title {
+  margin-bottom: 30px;
+  margin-left: 20%;
+}
+.team-section .team-title h3 {
+  font-family: "Avenir", sans-serif;
+  font-weight: 700;
+  font-size: 34px;
+  margin-bottom: 10px;
+}
+.team-section .team-title p {
+  font-size: 20px;
+  font-family: "Helvetica Nue", sans-serif;
+  font-weight: 400;
+  line-height: 23px;
+}
+.team-section .team {
+  border-radius: 65px;
+  background-color: #DDDDDD;
+  padding: 40px 120px;
+  margin-left: 100px;
+  margin-right: 100px;
+}
+.team-section .team .team-members {
+  display: flex;
+  margin-left: -25px;
+  margin-right: -25px;
+}
+.team-section .team .team-member {
+  padding-left: 25px;
+  padding-right: 25px;
+  width: 25%;
+  text-align: center;
+}
+.team-section .team .team-member img {}
+.team-section .team .team-member h4 {
+  font-size: 30px;
+  color: #131313;
+  font-weight: 400;
+  margin-top: 10px;
+}
+
+
+/* Main Content */
+.main-content {
+  padding-bottom: 100px;
+}
+.m-content-item {
+  margin-bottom: 15px;
+}
+.m-content-item > div:first-child h2.radius-title {
+  text-transform: uppercase;
+  font-family: "Avenir", sans-serif;
+  font-weight: 900;
+  font-size: 100px;
+  background-color: #fff;
+  display: inline-block;
+  line-height: 1;
+  border-top-right-radius: 60px;
+  border-bottom-right-radius: 60px;
+  padding: 15px 70px;
+  margin-bottom: 30px;
+}
+.m-content-item.alt > div:first-child {
+  text-align: right;
+}
+.m-content-item.alt > div:first-child  h2.radius-title {
+  border-radius: 0;
+  border-top-left-radius: 60px;
+  border-bottom-left-radius: 60px;
+}
+
+.m-content-item > div:last-child {
+  display: flex;
+  align-items: center;
+}
+.m-content-item.alt > div:last-child {
+  justify-content: flex-end;
+}
+.m-content-item.alt > div:last-child > div {
+  margin-right: 50px;
+}
+.m-content-item > div:last-child img {}
+.m-content-item > div:last-child > div {}
+.m-content-item > div:last-child .m-content-article {
+  max-width: 420px;
+  margin-left: 70px;
+}
+.m-content-item > div:last-child .m-content-article h3 {
+  font-family: "Avenir", sans-serif;
+  font-size: 34px;
+  line-height: 44px;
+  margin-bottom: 15px;
+}
+.m-content-item > div:last-child > div p {
+  margin-bottom: 20px;
+}
+
+.m-content-item.sounds > div:last-child img {
+  width: 45%;
+}
+.m-content-item.plugins > div:last-child img {
+  width: 61%;
+}
+.m-content-item.academy > div:last-child img {
+  width: 65%;
+}
+.m-content-item.camps > div:last-child img {
+  width: 55%;
+}
+
+/* Footer */
+.footer-top {
+  background-color: #ddd;
+  color: #131313;
+}
+.footer-top .container {
+  display: flex;
+  padding-left: 50px;
+  padding-right: 50px;
+  align-items: center;
+}
+.ft-left {
+flex: 0 0 63%;
+position: relative;
+}
+.ft-left .ftl-bottom {
+  position: absolute;
+  bottom: 0px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+  
+.ft-left .ftl-bottom p {
+  font-size: 34px;
+  font-family: "Avenir", sans-serif;
+}
+.ft-left .ftl-bottom a {
+  display: flex;
+  align-items: center;
+}
+.ft-left .ftl-bottom a:first-of-type {
+  margin-right: 15px;
+  margin-left: 15px;
+}
+.ft-left .ftl-bottom a img {
+  max-width: 80px;
+}
+.ft-left .ftl-bottom a span {
+  
+}
+.ft-left > img {
+  transform: translateY(-70px);
+}
+.ft-right {
+  margin-top: -20px;
+}
+.ft-right h4 {
+  font-size: 34px;
+  line-height: 40px;
+  font-family: "Avenir", sans-serif;
+  font-weight: 500;
+}
+.ft-right p {
+  margin-top: 10px;
+  margin-bottom: 15px;
+}
+.ft-right .ft-logos {
+  margin-top: 35px;
+  display: flex;
+  justify-content: space-between;
+}
+.ft-right .ft-logo {
+  text-align: center;
+}
+.ft-right .ft-logo img {
+  max-width: 80px;
+}
+.ft-right .ft-logo span {
+  display: block;
+  margin-top: -17px;
+}
+.footer-copyright {
+  padding-top: 100px;
+  background-image: url(../images/footer/footer-bg.jpg);
+  background-size: cover;
+  background-position: center center;
+}
+.footer-copyright .container {
+  max-width: 1170px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  color: #000;
+}
+.footer-copyright ul {
+  overflow: hidden;
+}
+.footer-copyright ul li {
+  margin-left: 15px;
+  float: left;
+}
+.footer-copyright ul li:first-child {
+  margin-left: 0;
+}
+.footer-copyright ul li a {
+  color: #000;
+}
+.footer-copyright ul li a:hover {
+  text-decoration: underline;
+}
+.footer-copyright .fc-top {
+  margin-bottom: 100px;
+  position: relative;
+}
+.footer-copyright .fc-top h3 {
+  font-family: "Avenir", sans-serif;
+  font-size: 34px;
+  line-height: 35px;
+  font-weight: 500;
+  margin-bottom: 30px;
+}
+.footer-copyright .fc-top p {
+  max-width: 510px;
+  line-height: 20px;
+}
+.footer-copyright .fc-top a.common-btn {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.footer-copyright .fc-bottom {
+  border-top: 2px solid #000;
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 20px;
+  padding-top: 17px;
+}
+.footer-copyright .fc-bottom {
+  font-size: 14px;
+  font-weight: 600;
+}

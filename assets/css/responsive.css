@@ -1,0 +1,266 @@
+@media (min-width: 1400px) {
+  .ft-right {
+    padding-left: 50px;
+  }
+}
+@media (max-width: 1300px) {
+  .team-section .team .team-member h4 {
+    font-size: 25px;
+  }
+}
+@media (max-width: 1199px) {
+  .ft-left > img {
+    transform: translateY(0px);
+  }
+  .ft-left .ftl-bottom {
+    flex-wrap: wrap;
+    position: relative;
+  }
+  .ftl-bottom p {
+    width: 100%;
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 10px;
+  }
+}
+@media (max-width: 1150px) {
+  .team-section .team .team-member h4 {
+    font-size: 20px;
+  }
+  .m-content-item > div:first-child h2.radius-title {
+    font-size: 55px;
+    padding: 15px 60px;
+  }
+  .m-content-item > div:last-child .m-content-article h3 {
+    font-size: 27px;
+    line-height: 32px;
+  }
+  .m-content-item > div:last-child .m-content-article p {
+    font-size: 17px;
+  }
+  .m-content-item > div:last-child img {
+    width: 50% !important;
+  }
+  .footer-top {
+    padding: 50px 0;
+  }
+  .footer-top .container {
+    flex-wrap: wrap;
+  }
+  .ft-left {
+    flex: 0 0 100%;
+  }
+  .ft-left > img {
+    max-width: 500px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .ft-right {
+    margin-top: 30px;
+  }
+}
+
+@media (max-width: 991px) {
+  .welcome-section .welcome-text h3 {
+    font-size: 35px;
+    line-height: 35px;
+  }
+  .welcome-section .welcome-text p {
+    padding-left: 0;
+    font-size: 20px;
+  }
+  .team-section .team .team-members {
+    flex-wrap: wrap;
+  }
+  .team-section .team {
+    margin-left: 50px;
+    margin-right: 50px;
+    padding: 30px 60px;
+  }
+  .team-section .team .team-member {
+    width: 50%;
+    margin-bottom: 50px;
+  }
+  .team-section .team .team-member:nth-child(3),
+  .team-section .team .team-member:nth-child(4) {
+    margin-bottom: 0;
+  }
+  .team-section .team .team-member img {
+    max-width: 200px;
+  }
+  .m-content-item > div:last-child .m-content-article {
+    margin-left: 40px;
+  }
+  .m-content-item.alt > div:last-child > div {
+    margin-right: 30px;
+  }
+}
+@media (max-width: 870px) {
+  .m-content-item > div:first-child h2.radius-title {
+    font-size: 36px;
+    padding: 15px 40px;
+  }
+  .m-content-item > div:last-child .m-content-article h3 {
+    font-size: 22px;
+    line-height: 25px;
+  }
+  .m-content-item > div:last-child .m-content-article p {
+    font-size: 16px;
+    line-height: 20px;
+  }
+}
+@media (max-width: 767px) {
+  .welcome-section .welcome-text .text-center {
+    text-align: left;
+  }
+  .m-content-item {
+    margin-bottom: 50px;
+  }
+  .m-content-item > div:last-child {
+    flex-wrap: wrap;
+  }
+  .m-content-item > div:last-child .m-content-article {
+    margin-left: 20px;
+    margin-top: 15px;
+  }
+  .m-content-item.alt > div:last-child .m-content-article {
+    margin-top: 0;
+    margin-bottom: 15px;
+  }
+  .m-content-item.alt > div:last-child {
+    text-align: right;
+  }
+  .m-content-item.alt > div:last-child > div {
+    margin-right: 20px;
+  }
+  .m-content-item > div:last-child img {
+    width: calc(100% - 10px) !important;
+  }
+  .main-content {
+    padding-bottom: 0px;
+  }
+  .footer-copyright {
+    padding-top: 60px;
+  }
+  .footer-copyright .fc-top a.common-btn {
+    transform: none;
+    position: relative;
+    margin-top: 20px;
+  }
+  .footer-copyright .fc-top {
+    margin-bottom: 50px;
+  }
+  .footer-copyright .fc-top h3 br {
+    display: none;
+  }
+}
+@media (max-width: 600px) {
+  .welcome-section {
+    align-items: center;
+    padding-bottom: 0;
+  }
+  .welcome-section .welcome-text h3 {
+    font-size: 25px;
+    line-height: 30px;
+  }
+  .welcome-section .welcome-text p {
+    font-size: 18px;
+    margin-top: 20px;
+  }
+  .team-section .team .team-member {
+    width: 100%;
+  }
+  .team-section .team-title {
+    margin-left: 20px;
+  }
+  .team-section .team .team-member:nth-child(3) {
+    margin-bottom: 50px;
+  }
+}
+@media (max-width: 575px) {
+  .ft-left > img {
+    max-width: 100%;
+  }
+  .ft-right h4 {
+    font-size: 25px;
+    line-height: 30px;
+  }
+  .ft-right p {
+    font-size: 17px;
+    line-height: 23px;
+  }
+  .ft-right .ft-logos {
+    flex-wrap: wrap;
+  }
+  .ft-right .ft-logo {
+    width: 50%;
+    margin-bottom: 30px;
+  }
+  .ft-right .ft-logo:nth-child(3),
+  .ft-right .ft-logo:nth-child(4) {
+    margin-bottom: 0;
+  }
+  .footer-top .container {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .footer-copyright .fc-bottom {
+    flex-direction: column;
+    align-items: center;
+  }
+  .footer-copyright .fc-top h3 {
+    font-size: 26px;
+    line-height: 28px;
+    margin-bottom: 20px;
+  }
+  .footer-copyright .fc-top p {
+    font-size: 18px;
+}
+}
+@media (max-width: 479px) {
+  header .container {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  header nav ul li:last-child {
+    margin-left: 20px;
+  }
+  .welcome-section .welcome-text {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .team-section {
+    padding: 50px 0;
+  }
+  .team-section .team-title h3 {
+    font-size: 30px;
+  }
+  .team-section .team-title p {
+    font-size: 18px;
+    line-height: 20px;
+  }
+  .team-section .team {
+    margin-left: 25px;
+    margin-right: 25px;
+    padding: 30px;
+    border-radius: 30px;
+  }
+}
+@media (max-width: 384px) {
+  .welcome-section .welcome-text h3 br {
+    display: none;
+  }
+  .welcome-section .welcome-text p br {
+    display: none;
+  }
+  .ft-right h4 {
+    font-size: 24px;
+  }
+  .ft-left .ftl-bottom a img {
+    max-width: 73px;
+  }
+  .footer-copyright .fc-top h3 {
+    font-size: 21px;
+  }
+}
